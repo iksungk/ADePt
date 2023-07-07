@@ -670,7 +670,7 @@ def train(net, input_noise_net, input_dims,
                         mdict = {'x_H': out_H.cpu().detach().numpy()})
 
         if (i % 25 == 0 and i <= 100) or (i % 50 == 0 and i > 100):
-            print('Iteration %04d/%04d Loss %f' % (i, admm_iter, total_loss.item()), end='\n')
+            print('Iteration %04d/%04d Loss %f' % (i, num_iter, total_loss.item()), end='\n')
         
 
         
